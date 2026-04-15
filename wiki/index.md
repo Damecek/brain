@@ -24,3 +24,4 @@ _No sources ingested yet. Add files to `sources/` and ask to ingest them._
 ## Analysis
 
 - [[hadokrizovka-mobile-hra|Nápad na mobilní hru: Had + slovní puzzle]]
+- [[yarn-unifikator-marketplace|Yarn Unifikátor: one-stop marketplace přízí]]

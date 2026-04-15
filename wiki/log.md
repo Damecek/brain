@@ -8,6 +8,12 @@ Newest entries first.
 
 ## 2026-04-15
 
+### Analysis: Yarn Unifikátor (marketplace přízí)
+- Zapsán nový projektový nápad na datově unifikovaný e-shop přízí.
+- Popsán návrh datového modelu (produkt, varianta, specifikace, nabídky, snapshoty).
+- Přidána roadmapa MVP → F3, monetizace a klíčové UX filtry.
+- Vytvořena stránka [[yarn-unifikator-marketplace]].
+
 ### Analysis: Nápad na mobilní hru (Had + slovní puzzle)
 - Zapsán návrh herní mechaniky, kde had sbírá písmena a skládá validní slova.
 - Popsána detekce slov v těle hada dopředu i dozadu.
