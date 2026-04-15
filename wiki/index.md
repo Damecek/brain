@@ -23,4 +23,4 @@ _No sources ingested yet. Add files to `sources/` and ask to ingest them._
 
 ## Analysis
 
-_No analysis pages yet._
+- [[hadokrizovka-mobile-hra|Nápad na mobilní hru: Had + slovní puzzle]]
