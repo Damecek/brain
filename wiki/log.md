@@ -6,6 +6,20 @@ type: log
 
 Newest entries first.
 
+## 2026-04-24
+
+### Operations: Zavedeno pravidlo průběžného zapisování požadavků
+- Vytvořena stránka [[projektova-pravidla-spoluprace]] s provozním pravidlem,
+  že každý nový požadavek má být zapsán do projektu jako Markdown záznam.
+- Doplněna praktická interpretace umístění záznamů v rámci wiki struktury.
+
+### Analysis: Nápad na aplikaci Spatial audio běžecký kouč
+- Zapsán produktový koncept běžecké aplikace se „zvukovým pronásledovatelem“.
+- Popsán mechanismus motivace přes změnu vzdálenosti 3D zvuku podle tempa.
+- Přidány doporučené funkce: režimy tréninku, citlivost, setrvačnost,
+  post-run analytika, bezpečnostní režim a integrace dat.
+- Vytvořena stránka [[spatial-audio-bezecky-kouc]].
+
 ## 2026-04-15
 
 ### Analysis: Yarn Unifikátor (marketplace přízí)

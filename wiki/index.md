@@ -1,13 +1,13 @@
 ---
 type: index
-updated: 2026-04-15
+updated: 2026-04-24
 ---
 
 # Wiki Index
 
 ## Topics
 
-_No topics yet._
+- [[projektova-pravidla-spoluprace|Projektová pravidla spolupráce]]
 
 ## Concepts
 
@@ -23,5 +23,6 @@ _No sources ingested yet. Add files to `sources/` and ask to ingest them._
 
 ## Analysis
 
+- [[spatial-audio-bezecky-kouc|Nápad na aplikaci: Spatial audio běžecký kouč]]
 - [[hadokrizovka-mobile-hra|Nápad na mobilní hru: Had + slovní puzzle]]
 - [[yarn-unifikator-marketplace|Yarn Unifikátor: one-stop marketplace přízí]]
