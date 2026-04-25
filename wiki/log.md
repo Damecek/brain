@@ -8,6 +8,12 @@ Newest entries first.
 
 ## 2026-04-24
 
+### Analysis: Carvago LLM doporučení auta
+- Zapsán nápad na personalizované doporučování aut na základě profilu zákazníka.
+- Popsán návrh trénovacích dat (profil klienta → skutečně koupené auto).
+- Přidán návrh inferenčního flow: predikce parametrů auta → matching na inventory / předvyplnění filtrů.
+- Vytvořena stránka [[carvago-llm-doporuceni-aut]].
+
 ### Operations: Zavedeno pravidlo průběžného zapisování požadavků
 - Vytvořena stránka [[projektova-pravidla-spoluprace]] s provozním pravidlem,
   že každý nový požadavek má být zapsán do projektu jako Markdown záznam.
