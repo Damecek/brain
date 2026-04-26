@@ -4,7 +4,7 @@ title: "Yarn Unifikátor: one-stop marketplace přízí"
 question: "Zapiš mi novej nápad na projekt: unifikovaný e-shop přízí se scrapingem nabídek a dat od výrobců"
 tags: [e-commerce, yarn, scraping, marketplace, data-platform]
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-26
 ---
 
 # Yarn Unifikátor: one-stop marketplace přízí
@@ -12,6 +12,48 @@ updated: 2026-04-15
 ## Question / Framing
 
 Cíl je postavit datově řízený marketplace pro příze (pletení i háčkování), který na jednom místě sjednotí produkty, nabídky od prodejců, fotky a technické parametry od výrobců. Výsledkem má být e-shop s výrazně lepší filtrací a orientací než běžné obchody.
+
+## User use case: zkušená pletařka (priorita kritérií)
+
+Vstup od reálné cílové uživatelky (matka zadavatele, aktivní pletařka). Kritéria seřazená podle váhy, jak je sama používá při výběru:
+
+1. **Materiál** — dnes existuje extrémně mnoho variant (i exotika typu „mléčné vlákno"), na běžných e-shopech se v tom nedá orientovat. Filtr musí být robustní a normalizovaný.
+2. **Tloušťka příze (yarn weight)** — stejná, ne-li větší váha než materiál. Standardní kategorie:
+   - lace
+   - fingering
+   - sport
+   - DK
+   - worsted (aran)
+   - bulky (chunky)
+   - super bulky
+   - jumbo
+3. **Hmotnost klubka** — typicky 5 g, 50 g, 100 g, 100 g+.
+4. **Barva.**
+5. **Návin** (metráž).
+6. **Certifikace** — např. vhodné pro děti do 3 let, Öko-Tex Standard, GOTS, mulesing-free atd.
+7. **Doporučená velikost jehlic a háčku.**
+8. **Dostupnost a logistika nákupu:**
+   - preference jednoho e-shopu (když už uživatel jednu přízi vybere, dál by se mělo přednostně dohledávat tam — kvůli ušetření poštovného),
+   - cena poštovného jako filtr/řadítko,
+   - geografické omezení: jen CZ, jen SK, nebo CZ + SK e-shopy.
+
+### Textové vyhledávání s normalizací synonym
+
+Klíčový požadavek: fulltext musí robustně řešit varianty pojmenování stejné věci napříč e-shopy. Příklady:
+- `mohér` ↔ `mohair`
+- `viscose` ↔ `viskóza` ↔ `viskoza`
+- diakritika obecně (CZ trh) musí být ignorována.
+
+Z toho plyne potřeba **synonym dictionary / aliasů na úrovni materiálu** a normalizace dotazů (lowercase, stripped diakritika, jazykové aliasy CZ/EN).
+
+### Implikace pro datový model a UX
+
+- Materiál a tloušťka musí být **enumerace s aliasy**, nikoli volný text. Bez toho filtrace nefunguje.
+- Hmotnost klubka jako diskrétní bucket (5 / 50 / 100 / 100+ g) i jako přesná hodnota.
+- Certifikace jako multi-select tagy s ověřitelným zdrojem (od výrobce).
+- „Sticky merchant" preference: po výběru první příze upřednostnit nabídky stejného e-shopu (optimalizace celkového nákupního košíku včetně poštovného).
+- Geo-filtr na e-shopy: CZ / SK / CZ+SK.
+- Doporučené jehlice a háček patří mezi povinná zobrazovaná pole na kartě produktu.
 
 ## Analysis
 

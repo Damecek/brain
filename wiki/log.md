@@ -6,6 +6,14 @@ type: log
 
 Newest entries first.
 
+## 2026-04-26
+
+### Update: Yarn Unifikátor — user use case od reálné pletařky
+- Doplněn use case s prioritizovanými kritérii výběru příze (materiál, tloušťka, hmotnost, barva, návin, certifikace, jehlice/háček, logistika).
+- Přidán požadavek na synonym dictionary pro materiály (mohér/mohair, viscose/viskóza) a normalizaci diakritiky.
+- Definovány implikace pro datový model: enumerace s aliasy, sticky merchant preference, geo-filtr CZ/SK.
+- Aktualizována stránka [[yarn-unifikator-marketplace]].
+
 ## 2026-04-25
 
 ### Analysis: Carvago CLI + MCP výstupem URL filtru
