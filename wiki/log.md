@@ -6,6 +6,15 @@ type: log
 
 Newest entries first.
 
+## 2026-04-25
+
+### Analysis: Carvago CLI + MCP výstupem URL filtru
+- Zapsán návrh sjednocení Carvago CLI a Carvago MCP nad společným `filter_builder` jádrem.
+- Definován společný výstup: canonical URL frontendového filtru + debug metadata.
+- Popsána proveditelnost napojení přes MCP do ChatGPT aplikace.
+- Vytvořena stránka [[carvago-cli-mcp-filtr-url-chatgpt-aplikace]].
+- Aktualizován [[index]].
+
 ## 2026-04-24
 
 ### Analysis: Carvago LLM doporučení auta
