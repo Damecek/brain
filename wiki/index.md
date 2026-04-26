@@ -1,6 +1,6 @@
 ---
 type: index
-updated: 2026-04-24
+updated: 2026-04-25
 ---
 
 # Wiki Index
@@ -23,7 +23,8 @@ _No sources ingested yet. Add files to `sources/` and ask to ingest them._
 
 ## Analysis
 
+- [[carvago-cli-mcp-filtr-url-chatgpt-aplikace|Carvago CLI + Carvago MCP: URL filtru pro frontend]]
 - [[carvago-llm-doporuceni-aut|Carvago: LLM doporučení auta na míru]]
-- [[spatial-audio-bezecky-kouc|Nápad na aplikaci: Spatial audio běžecký kouč]]
 - [[hadokrizovka-mobile-hra|Nápad na mobilní hru: Had + slovní puzzle]]
+- [[spatial-audio-bezecky-kouc|Nápad na aplikaci: Spatial audio běžecký kouč]]
 - [[yarn-unifikator-marketplace|Yarn Unifikátor: one-stop marketplace přízí]]
