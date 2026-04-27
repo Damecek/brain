@@ -19,6 +19,14 @@ Newest entries first.
 - Přidány implementační zásady: DRR/reverb jako primární distance cue, deadband + hysterese + setrvačnost.
 - Zapsány guardrails pro bezpečnost, fallbacky bez head trackingu a hlavní go/no-go KPI pro beta fázi.
 
+### Analysis: Carvago — osobní AI agenti a MCP strategie
+- Zapsána strategická diskuse o budoucnosti osobních AI agentů a napojení firemních služeb.
+- Doplněno doporučení pro Carvago: agent-ready přístup, postupné vystavení MCP (private pilot → controlled write → public discovery).
+- Zachycen rámec pro discovery MCP endpointů (registry/store + enterprise allowlisty).
+- Vytvořena stránka [[carvago-osobni-ai-agenti-mcp-strategie]].
+
+### Operations: Upřesnění pravidla zapisování
+- Aktualizována stránka [[projektova-pravidla-spoluprace]]: explicitně se zapisují i diskuzní otázky a strategické úvahy.
 ### Update: Spatial audio běžecký kouč — validace konceptu a MVP architektura
 - Rozšířena analýza o validaci proveditelnosti na iOS/AirPods (spatial audio, head tracking, background usage).
 - Doplněn positioning vůči existujícím kategoriím (voice coach, metronom, ghost pacer, motion-reactive audio).
