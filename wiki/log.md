@@ -8,6 +8,17 @@ Newest entries first.
 
 ## 2026-04-27
 
+### Update: Spatial audio běžecký kouč — změna na additive update (ponechání originálu)
+- Upraven přístup na základě review: původní obsah stránky [[spatial-audio-bezecky-kouc]] byl zachován.
+- Nové produktové body z Claude research byly přidány jako samostatná sekce **ADDITION (2026-04-27)** místo přepisu původní analýzy.
+- Zachován původní framing, metadata i struktura; rozšíření je čistě aditivní.
+
+### Update: Spatial audio běžecký kouč — zařazení do pace app produktu
+- Přepracována stránka [[spatial-audio-bezecky-kouc]] do produktového tvaru pro pace app roadmapu.
+- Doplněna explicitní rozhodnutí pro iOS-first rollout, validaci v terénu a následnou productizaci.
+- Přidány implementační zásady: DRR/reverb jako primární distance cue, deadband + hysterese + setrvačnost.
+- Zapsány guardrails pro bezpečnost, fallbacky bez head trackingu a hlavní go/no-go KPI pro beta fázi.
+
 ### Analysis: Carvago — osobní AI agenti a MCP strategie
 - Zapsána strategická diskuse o budoucnosti osobních AI agentů a napojení firemních služeb.
 - Doplněno doporučení pro Carvago: agent-ready přístup, postupné vystavení MCP (private pilot → controlled write → public discovery).
