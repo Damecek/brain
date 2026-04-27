@@ -6,6 +6,16 @@ type: log
 
 Newest entries first.
 
+## 2026-04-27
+
+### Update: Spatial audio běžecký kouč — validace konceptu a MVP architektura
+- Rozšířena analýza o validaci proveditelnosti na iOS/AirPods (spatial audio, head tracking, background usage).
+- Doplněn positioning vůči existujícím kategoriím (voice coach, metronom, ghost pacer, motion-reactive audio).
+- Přidána doporučená architektura s oddělením pacing engine, behavior mappingu a platformního rendereru.
+- Zapsán matematický model řízení (filtrace rychlosti, log-speed error, saturace, setrvačnost).
+- Přidána rizika a zúžený MVP scope pro praktické ověření v terénu.
+- Aktualizována stránka [[spatial-audio-bezecky-kouc]].
+
 ## 2026-04-26
 
 ### Update: Yarn Unifikátor — user use case od reálné pletařky
