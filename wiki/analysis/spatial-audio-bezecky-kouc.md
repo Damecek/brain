@@ -15,9 +15,9 @@ Cílem je navrhnout nerušivou běžeckou aplikaci, která dává zpětnou vazbu
 ## Analysis
 
 ### Validace konceptu (high-level)
-Koncept je **technicky realizovatelný** a dává smysl i z pohledu trhu, ale hlavní nejistota není v API, nýbrž v psychoakustice a UX čitelnosti během reálného běhu. Prakticky: problém není „jestli to jde postavit“, ale „jestli to bude při únavě, ruchu a současném poslechu cizího audia konzistentně srozumitelné“. 
+Koncept je **technicky realizovatelný** a dává smysl i z pohledu trhu, ale hlavní nejistota není v API, nýbrž v psychoakustice a UX čitelnosti během reálného běhu. Prakticky: problém není „jestli to jde postavit“, ale „jestli to bude při únavě, ruchu a současném poslechu cizího audia konzistentně srozumitelné“.
 
-### Product model: „virtuální pronásledovatel“
+### Product model: „virtuální pronásledovatel"
 Aplikace pracuje s neverbální metaforou zvukového objektu (běžec, kroky, mechanický zvuk), jehož pozice a charakter se mění podle odchylky od cílového tempa.
 
 - Držím/zrychluji nad target → zvuk ustupuje.
@@ -125,6 +125,40 @@ Stejný model obslouží:
 ## Limitations
 - Bez interního prototypu a user testů zatím nelze potvrdit optimální mapování odchylky tempa na zvukový tlak.
 - Citlivost řešení bude závislá na hardware kombinaci (sluchátka/OS), prostředí běhu a kvalitě pace estimace.
+
+## ADDITION (2026-04-27): Zařazení do pace app produktu dle Claude research
+
+### Product decisions (add-on k původní analýze)
+- Pace app má jít v **iOS-first** režimu s `AVAudioEngine + AVAudioEnvironmentNode` a head trackingem přes `CMHeadphoneMotionManager` tam, kde je dostupný.
+- Core psychoakustický princip: **distance cue nést hlavně přes DRR (reverb wet/dry), ne jen přes gain**.
+- Head tracking je bonus; always-on UX musí zůstat funkční na běžných stereo sluchátkách.
+- Android řešit až po potvrzení core percepce v iOS terénním testu (degradace-first strategie).
+
+### Roadmap add-on
+1. **Spatial Coach Beta (6–8 týdnů)**
+   - steady pace + intervaly,
+   - 2–3 zvukové scény,
+   - intentional inertia,
+   - background + lock screen UX.
+2. **Field validation (2–4 týdny)**
+   - ověřit, že uživatel čte trend přibližování/vzdalování,
+   - měřit pace consistency vs baseline,
+   - zhodnotit RPE/snesitelnost při delších bězích.
+3. **Productization**
+   - negative split, race simulation, adaptivní cíle,
+   - HealthKit/watch companion,
+   - safety mode + exporty.
+
+### Guardrails add-on
+- Deadband kolem target pace (např. ±4 s/km), mimo něj plynulé sigmoidní mapování.
+- Hysterese + setrvačnost, aby feedback nebyl trhavý.
+- Subtle mode + mono fallback pro horší binaurální podmínky.
+- Bezpečnostní preference venku: transparentní poslech jako doporučený default.
+
+### Go/No-go kritéria pro beta
+- Uživatelé konzistentně interpretují distance trend.
+- Viditelné zlepšení stability tempa proti kontrolním běhům.
+- Nízká míra rušení při souběžném poslechu hudby/podcastu.
 
 ## Connections
 - [[overview]]
