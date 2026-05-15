@@ -6,6 +6,14 @@ type: log
 
 Newest entries first.
 
+## 2026-05-15
+
+### Analysis: Claude Code ↔ Codex přenositelnost pluginů, skillů a MCP
+- Zapsán nový návrh vendor-neutral vrstvy pro sdílení capability mezi [[Claude Code ↔ Codex: přenositelnost pluginů, skillů a MCP|Claude Code a Codexem]].
+- Dopsána analýza rozdílů mezi `CLAUDE.md`, `AGENTS.md`, skills, slash commands, hooks a MCP vrstvou.
+- Zachycen závěr, že nejpraktičtější přenositelný core je dnes MCP a že zbytek má být generovaný přes target-specific adaptéry.
+- Doplněny aktuální veřejné zdroje a marketplace-like discovery odkazy pro MCP ekosystém.
+
 ## 2026-04-27
 
 ### Update: Spatial audio běžecký kouč — změna na additive update (ponechání originálu)
